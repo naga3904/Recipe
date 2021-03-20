@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #ece9e6;
+    background: -webkit-linear-gradient(
+        to right,
+        #ffffff,
+        #ece9e6
+    );
+    background: linear-gradient(
+        to right,
+        #ffffff,
+        #ece9e6
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins","sans-serif";
+    margin: 0%;
+    min-height: 100vh;
+}
+.trending-meals::-webkit-scrollbar {
+    width: 12px;
+    height: 8px;              /* width of the entire scrollbar */
+  }
+  
+.trending-meals::-webkit-scrollbar-track {
+    background: #fff;        /* color of the tracking area */
+  }
+  
+.trending-meals::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 5px;       /* roundness of the scroll thumb */
+    border: 1px solid orange;  /* creates padding around scroll thumb */
+  }
+
+.meal-info-container::-webkit-scrollbar {
+    width: 12px;
+    height: 8px;              /* width of the entire scrollbar */
+  }
+  
+.meal-info-container::-webkit-scrollbar-track {
+    background: #fff;        /* color of the tracking area */
+  }
+  
+.meal-info-container::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 5px;       /* roundness of the scroll thumb */
+    border: 1px solid orange;  /* creates padding around scroll thumb */
+  }
+img{
+    max-width: 100%;
+}
+.mobile-container{
+    background-color: #fff;
+    width: 400px;
+    overflow: hidden;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+header input{
+    border: none;
+    width: 300px;
+    background-color: #eeed;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header button{
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.trending-meals{
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(243, 225, 255);
+    overflow-x: scroll;
+}
+.fav-meals{
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+}
+.fav_img{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+}
+.fav_name{
+    display: inline-block;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 75px;
+}
+.meal{
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 1rem;
+}
+.meal-header{
+    position: relative;
+}
+.meal-header .random{
+    position: absolute;
+    top: 1rem;
+    background-color: #fff;
+    padding: 0.25rem 1rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius:3px ;
+}
+.meal-body{
+    margin: 0%;
+    margin-left: 20px;
+}
+.meal-body .fav-btn{
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.meal-body .fav-btn:active{
+    color: aquamarine;
+    border: none;
+}
+.meal-body .fav-btns{
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.meal-body .fav-btns:active{
+    color: aquamarine;
+    border: none;
+}
+.meal-info-container{
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    overflow-y: scroll;
+}
+.meal-info-container.hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.meal-info{
+    background-color: #fff;
+    max-width: 600px;
+    width: 100%;
+    padding: 0 2rem;
+    border-radius: 5px;
+    
+}
+.meal-info h1{
+    text-align: center;
+}
+#btn-close{
+    border: none;
+    background: #E54B4B;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+#btn-close:hover{
+    opacity: 0.8;
+}
